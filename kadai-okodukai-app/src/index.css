@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+
+  /* ===== カラー設定 ===== */
+  --color-main: #3FB88C;
+
+  /* テキスト系 */
+  --color-text-main: #333333;
+  --color-text-sub: #999999;
+
+  /* 背景系 */
+  --color-bg-fixed: #F5F5F5; /* 固定UIやタブ切替背景 */
+  --color-bg-white: #FFFFFF;
+
+  /* シャドウ色（20%不透明） */
+  --color-shadow: 0px 0px 5px rgba(109, 109, 109, 0.2);
+
+  /* メーター・枠線 */
+  --color-meter-border: #E2E8F0;
+
+  /* カテゴリ別カラー */
+  /* 電車 */
+  --color-blue-main: #6EB9F7;
+  --color-blue-bg: #E3F2FD;
+
+  /* 食費 */
+  --color-orange-main: #F7B85C;
+  --color-orange-bg: #FFF3E0;
+
+  /* 日用品 */
+  --color-green-main: #3FB88C;
+  --color-green-bg: #E0F2F1;
+
+  /* 衣服 */
+  --color-pink-main: #F37C9D;
+  --color-pink-bg: #FCE4EC;
+
+  /* バイト */
+  --color-job-main: #7CB342;
+  --color-job-bg: #E6F4EA;
+
+  /* 臨時収入 */
+  --color-extra-main: #42A5F5;
+  --color-extra-bg: #E3F2FD;
+
+  /* その他 */
+  --color-other-main: #B0B0B0;
+  --color-other-bg: #EEEEEE;
+
+  /* 入力（必須・任意） */
+  /* 必須 */
+  --color-required-main: #D93025;
+  --color-required-bg: #FDECEC;
+
+  /* 任意 */
+  --color-optional-main: #555555;
+  --color-optional-bg: #F1F1F1;
+
+  /* ===== フォント設定 ===== */
+  --font-sans: 'Noto Sans JP', sans-serif;
+  --font-number: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  /* ===== 最後の余白 ===== */
+  --bottom-padding-small: 30px;
+  --bottom-padding-large: 70px;
+}
+
+/* body にデフォルトフォントと背景 */
+body {
+  font-family: var(--font-sans);
+  color: var(--color-text-main);
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+}
+
+/* PCでは真っ白画面にして操作不能にする */
+@media (min-width: 391px) {
+  body {
+    display: none;
+  }
+}
