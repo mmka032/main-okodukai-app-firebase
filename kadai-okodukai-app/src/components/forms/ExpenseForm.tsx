@@ -12,11 +12,11 @@ type Props = {
 
 export default function ExpenseForm({ onSubmit }: Props) {
   // 入力内容を保存するための変数
-  const [amount, setAmount] = useState<number | "">("");   // 金額
-  const [productName, setProductName] = useState("");      // 商品名
+  const [amount, setAmount] = useState<number | "">("");                // 金額
+  const [productName, setProductName] = useState("");                   // 商品名
   const [selectedCategory, setSelectedCategory] = useState<string>(""); // カテゴリー
-  const [date, setDate] = useState("");                    // 日付
-  const [memo, setMemo] = useState("");                    // メモ
+  const [date, setDate] = useState("");                                 // 日付
+  const [memo, setMemo] = useState("");                                 // メモ
 
   // 今日の日付を自動的に最初から入れておく
   useEffect(() => {

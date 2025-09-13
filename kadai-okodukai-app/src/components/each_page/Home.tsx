@@ -7,7 +7,7 @@ import type { RiType } from "../TabSwitch";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import RecentHistory from "../home_elements/RecentHistory";
 import type { Transaction } from "../../App";
-import { categoryMap } from "../forms/categories/categoryMap";
+import { categoryMap } from "../forms/categories/CategoryMap";
 import MyPieChart from "../home_elements/chart/PieChart";
 import CategoryBarChart from "../home_elements/chart/CategoryBarChart"
 
